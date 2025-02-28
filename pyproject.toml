@@ -1,7 +1,7 @@
 [project]
 authors = [{name = "Katherine Rosenfeld", email = "56368533+krosenfeld-IDM@users.noreply.github.com"}]
 dependencies = []
-name = "IHME_vaccine_rasters"
+name = "raster_bands"
 requires-python = ">= 3.11"
 version = "0.1.0"
 
@@ -14,7 +14,7 @@ channels = ["conda-forge"]
 platforms = ["linux-64"]
 
 [tool.pixi.pypi-dependencies]
-ihme_vaccine_rasters = { path = ".", editable = true }
+raster_bands = { path = ".", editable = true }
 
 [tool.pixi.tasks]
 

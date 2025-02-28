@@ -273,12 +273,6 @@ packages:
   purls: []
   size: 12129203
   timestamp: 1720853576813
-- pypi: .
-  name: ihme-vaccine-rasters
-  version: 0.1.0
-  sha256: 1a659e9204ff7997e2fa5bf252366a4c48983147a794047cf8f1ff861951a535
-  requires_python: '>=3.11'
-  editable: true
 - conda: https://conda.anaconda.org/conda-forge/linux-64/json-c-0.18-h6688a6e_0.conda
   sha256: 09e706cb388d3ea977fabcee8e28384bdaad8ce1fc49340df5f868a2bd95a7da
   md5: 38f5dbc9ac808e31c00650f7be1db93f
@@ -1034,6 +1028,12 @@ packages:
   purls: []
   size: 6217
   timestamp: 1723823393322
+- pypi: .
+  name: raster-bands
+  version: 0.1.0
+  sha256: e87c6616d40af151383170a36d9c2dd51708eaf7c383146b3a04d7c4b512765e
+  requires_python: '>=3.11'
+  editable: true
 - conda: https://conda.anaconda.org/conda-forge/linux-64/rav1e-0.6.6-he8a937b_2.conda
   sha256: 91b3c1ced90d04ee2eded1f72cf3cbc19ff05a25e41876ef0758266a5bab009f
   md5: 77d9955b4abddb811cb8ab1aa7d743e4

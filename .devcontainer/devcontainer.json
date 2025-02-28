@@ -4,6 +4,8 @@
         // Configure properties specific to VS Code.
         "vscode": {
           "settings": {
+            "python.defaultInterpreterPath": "${workspaceFolder}/.pixi/envs/default/bin/python",
+            "python.venvPath": "${workspaceFolder}/.pixi/envs/default"
           },        
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [

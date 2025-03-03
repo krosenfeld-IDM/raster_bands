@@ -22,10 +22,6 @@ raster_bands = { path = ".", editable = true }
 gdal = ">=3.10.2,<4"
 tqdm = ">=4.67.1,<5"
 
-[tool.pixi.feature.docs.pypi-dependencies]
-mkdocs = "*"
-mkdocs-autoapi = "*"
-
 [tool.pixi.feature.docs.dependencies]
 pip = ">=25.0.1,<26"
 

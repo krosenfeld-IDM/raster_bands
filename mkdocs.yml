@@ -1,0 +1,13 @@
+site_name: raster_bands
+nav:
+  - Home: index.md
+  - API: autoapi/
+
+plugins:
+  - search
+  - mkdocs-autoapi:
+      # autoapi_ignore:
+      #   - tests/**/*
+      autoapi_add_nav_entry: False
+      autoapi_dir: src # or /path/to/project/src      
+  - mkdocstrings

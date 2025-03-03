@@ -21,3 +21,9 @@ raster_bands = { path = ".", editable = true }
 [tool.pixi.dependencies]
 gdal = ">=3.10.2,<4"
 tqdm = ">=4.67.1,<5"
+
+[tool.pixi.feature.docs.dependencies]
+pip = ">=25.0.1,<26"
+
+[tool.pixi.environments]
+docs = ["docs"]

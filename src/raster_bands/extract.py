@@ -7,9 +7,10 @@ from typing import Union
 def extract_all_bands(input_raster: Union[str, Path], output_dir: Union[str, Path]):
     """
     Extracts all bands from a raster and saves them as separate GeoTIFF files.
+    
     Parameters:
-    input_raster (str): Path to the input raster file.
-    output_dir (str): Directory where the output GeoTIFF files will be saved.
+        input_raster (str): Path to the input raster file.
+        output_dir (str): Directory where the output GeoTIFF files will be saved.
     """
     input_raster = Path(input_raster)
 
@@ -29,9 +30,9 @@ def extract_band(input_raster: Union[str, Path], output_raster: Union[str, Path]
     Extracts a specified band from a raster and saves it as a new GeoTIFF file.
 
     Parameters:
-    input_raster (str): Path to the input raster file.
-    output_raster (str): Path to the output GeoTIFF file.
-    band_number (int): The band number to extract (1-based index).    
+        input_raster (str): Path to the input raster file.
+        output_raster (str): Path to the output GeoTIFF file.
+        band_number (int): The band number to extract (1-based index).    
     """        
 
     # Open the input raster

@@ -1,7 +1,7 @@
 import argparse
 from osgeo import gdal
 from tqdm import tqdm
-from pathlib import Path
+from pathlib import Path, PosixPath
 from typing import Union
 
 def extract_all_bands(input_raster: Union[str, Path], output_dir: Union[str, Path]):
@@ -39,7 +39,7 @@ def extract_band(input_raster: Union[str, Path], output_raster: Union[str, Path]
     dataset = gdal.Open(input_raster, gdal.GA_ReadOnly)
     if dataset is None:
         raise RuntimeError("Failed to open input raster.")
-
+        
     # Select the band to extract (1-based index)
     band = dataset.GetRasterBand(band_number)
 
@@ -54,7 +54,7 @@ def extract_band(input_raster: Union[str, Path], output_raster: Union[str, Path]
 
     # Create the output raster with the same dimensions as the input
     driver = gdal.GetDriverByName("GTiff")
-    out_dataset = driver.Create(output_raster, cols, rows, 1, band.DataType)
+    out_dataset = driver.Create(output_raster.as_posix() if isinstance(output_raster, PosixPath) else output_raster, cols, rows, 1, band.DataType)
 
     # Write the band data to the output file
     out_band = out_dataset.GetRasterBand(1)

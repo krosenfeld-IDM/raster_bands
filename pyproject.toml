@@ -2,7 +2,7 @@
 authors = [{name = "Katherine Rosenfeld", email = "56368533+krosenfeld-IDM@users.noreply.github.com"}]
 dependencies = []
 name = "raster_bands"
-requires-python = ">= 3.11"
+requires-python = ">= 3.10"
 version = "0.1.0"
 
 [build-system]
